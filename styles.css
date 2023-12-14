@@ -1,0 +1,35 @@
+.tareas {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 65%;
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 5px;
+}
+#tareas-container{
+    flex-wrap: wrap;
+}
+.instrucciones {
+    justify-content: center;
+    position: fixed;
+    right: 10px;
+    top: 0;
+    width: 20%;
+}
+
+
+input[type="text"] {
+    width: 81%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.tareas p {
+    width: 200px;
+    margin: 0;
+}
+
+.descTarea {
+    margin-left: 2px;
+    font-style: italic;
+}

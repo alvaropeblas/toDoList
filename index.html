@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+
+    <h1>TO DO LIST</h1>
+    <div class="form">
+        <label for="titulo">Titulo</label>
+        <input type="text" name="titulo" id="titulo">
+        <label for="descripcion">Descripcion</label>
+        <input type="text" name="descripcion" id="descripcion">
+        <button onclick="guardarTarea()">Guardar Tarea</button>
+        <button onclick="finalizarTarea()">Finalizar Tareas Marcadas</button>
+        <button onclick="borrarTareas()">Borrar Tareas Finalizadas</button>
+    </div>
+    <div id="tareas-container">
+    </div>
+    <div class="instrucciones">
+        <h2>Instrucciones</h2>
+        <ul>
+            <li>Haz <strong>doble click</strong> tanto en el <strong>título</strong> como en la
+                <strong>descripción</strong> de la tarea para modificarlos.
+            </li>
+            <br>
+            <li><strong>Guardar:</strong>: Presiona <strong>'Enter'</strong> una vez clicado fuera del campo de texto o
+                el botón de
+                <strong>'Guardar Tarea'.</strong>
+            </li>
+            <br>
+            <li><strong>Borrar:</strong> Presiona <strong>'Supr'</strong> o el botón de
+                <strong>'Borrar Tareas Finalizadas'</strong> para borrar tareas finalizadas.
+            </li>
+            <br>
+            <li><strong>Marcar Tareas:</strong> puedes marcar tareas con los <strong>números del 1-9</strong> luego
+                presiona <strong>'M'</strong> para darlas por finalizadas.</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
